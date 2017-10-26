@@ -1,0 +1,706 @@
+/* Общие стили */
+
+body {
+	margin: 0;
+    padding:0;
+    background-color: #fff;
+    font-family: 'PT Sans', Helvetica Neue, sans-serif;
+    font-size: 14px;
+    color:#333;
+}
+a {
+    color: #356d2e; 
+}
+a:hover, a:focus {
+    text-decoration: none;
+    color: #222;
+}
+a, button, select, li, i {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: none !important;
+}
+textarea {
+    resize: none;
+}
+img {
+    max-width: 100%;
+}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0;line-height: inherit;}
+input:focus::-moz-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0; line-height: inherit;} 
+input:focus:-moz-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0;line-height: inherit;}
+input:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0;line-height: inherit;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0;line-height: inherit;}
+textarea:focus::-moz-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0;line-height: inherit;}
+textarea:focus:-moz-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0;line-height: inherit;}
+textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;padding: 0;line-height: inherit;}
+
+.owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+/* Стилизация Bootstrap элементов */
+
+.tab-content {
+    padding: 10px 0;
+}
+.modal-body {
+    padding: 15px;
+}
+.modal-footer {
+    padding: 15px;
+}
+
+/* Кнопка наверх */
+
+#back_top {
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    line-height: 36px;
+    bottom: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#back_top:hover {
+    background: #000;
+}
+#back_top:before {
+    content: "\f077";
+    font: normal normal normal 14px/1 FontAwesome;
+    line-height: 38px;
+}
+
+/* Типография */
+
+.readmore {
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    border-bottom: 1px dashed;
+}
+.bttn {
+    margin: 15px auto;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 3px double;
+    font-size: 16px;
+}
+.bttn-color {
+    color: #fff;
+    font-size: 17px;
+    background: #356d2e;
+    border: 0;
+    margin-left: 0;
+    line-height: 22px;
+    border-radius: 0;
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 0;
+}
+.bttn-color:hover, .bttn-color:focus {
+    color: #fff;
+    background: #000;
+}
+.bttn-light {
+    color: #ffffff;
+    font-size: 17px;
+    background: #5fb454;
+    border: 0;
+    margin-left: 0;
+    line-height: 22px;
+    border-radius: 0;
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 0;
+}
+.bttn-light:hover, .bttn-light:focus {
+    color: #fff;
+    background: #356d2e;
+}
+
+/* Шапка сайта */
+
+header .container-fluid {
+    background: #333;
+    color: #dedede;
+}
+header .container-fluid a {
+    color: #dedede;
+}
+header ul.col-md-9 {
+    padding: 10px 15px;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+header ul.col-md-9 li {
+    display: inline-block;
+}
+header ul.col-md-9 li + li {
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 1px solid rgba(222, 222, 222, 0.3);
+}
+header .fa {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #356d2e;
+}
+header .form-control {
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border:1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    height: initial;
+    padding: 5px 12px;
+}
+header .input-group-btn .btn {
+    border-radius: 0;
+    padding: 4px 10px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+header .input-group-btn .btn .fa {
+    margin-right: 0
+}
+header .col-md-3 {
+    padding: 5px 15px;
+}
+.logo {
+    color: #222;
+    padding: 10px 0;
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.logo img {
+    height: 48px;
+    float: left;
+    margin-right: 10px;
+}
+.logo span {
+    display: block;
+    margin-top: 5px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #000;
+}
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+#menu > li {
+    display: inline-block;
+}
+#menu > li + li {
+    margin-left: -4px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+#menu > li a {
+    padding: 21px 12px;
+    display: block;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color: #333;
+}
+#menu > li:last-child a {
+    padding: 10px;
+    background: #356d2e;
+    color: #fff;
+    border: 3px double;
+}
+#menu > li:last-child a:hover, #menu > li:last-child a:focus {
+    color: #fff;
+    background: #000;
+}
+#menu > li a:hover {
+     color: #356d2e;
+}
+.dropdown-menu {
+    box-shadow: none;
+    border-radius: 0;
+}
+.sticky-top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Подвал сайта */
+
+footer {
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 30px;
+}
+footer a:hover {
+    color: #356d2e;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+footer li + li {
+    margin-top: 8px;
+}
+footer .fa {
+    margin-right: 5px;
+}
+.footer-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.footer-menu li {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.footer-menu a {
+    display: block;
+}
+.footer-top {
+    padding: 60px 0 60px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.footer-top a {
+    color: #fff;
+}
+.footer-bottom {
+    padding: 10px 0;
+}
+.footer-bottom a {
+    color: #fff;
+    display: inline-block;
+    border-bottom: 1px dashed;
+}
+
+
+/* Главная страница */
+
+.owl-carousel-slider .item {
+    background-size: cover;
+    font-size: 16px;
+}
+.owl-carousel-slider .col-md-6 {
+    padding: 15px 25px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 65px 0;
+    min-height: 240px;
+}
+.slider-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.owl-carousel-slider .bttn {
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px dashed;
+}
+.owl-carousel-slider .owl-controls {
+    margin-top: -40px;
+    margin-bottom: 15px;
+    z-index: 9;
+    position: relative;
+}
+.slider-intro {
+    max-height: 150px;
+    display: block;
+    overflow: hidden;
+}
+
+.about {
+    padding: 40px 15px;
+/*
+    background: url(../image/about-bg.png) no-repeat center left;
+    background-size: contain;
+*/
+}
+.last-news .bttn {
+    margin-top: 30px;
+}
+
+.news-date {
+    display: block;
+    float: left;
+    margin: 0 15px 35px 0;
+    border: 10px solid #fff;
+    background: #333;
+    position: relative;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.news-date .num {
+    position: absolute;
+    right: -5px;
+    bottom: -15px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+}
+.news-date .month {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+}
+.last-news .item + .item {
+    margin-top: 30px;
+}
+.last-news .item:hover .news-date {
+    background: #356d2e;
+}
+.last-news .title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+.last-news .intro {
+    height: 60px;
+    overflow: hidden;
+    display: block;
+}
+
+.triggers {
+    background: url(trigger-bg.jpg)/*tpa=http://frp45.ru/image/trigger-bg.jpg*/ no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 15px 80px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+.triggers ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.triggers li {
+    display: inline-block;
+    width: 14%;
+    vertical-align: top;
+    font-size: 18px;
+}
+.triggers li + li {
+    margin-left: 30px;
+}
+.triggers .fa {
+    display: block;
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+.triggers .big {
+    display: block;
+    font-size: 36px;
+}
+
+.info {
+    padding: 40px 15px;
+    background: #f8f7f6;
+}
+.info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.info ul li {
+    margin-bottom: 10px;
+}
+.info .fa {
+    color: #356d2e;
+    margin-right: 5px;
+}
+.info .box {
+    width: 90%;
+    padding: 20px 30px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.info .box + .box {
+    margin-top: 30px;
+}
+.info .box h3 {
+    margin-top: 8px;
+}
+.newseller input {
+    width: 100%;
+    max-width: 260px;
+    height: 44px;
+    line-height: 40px;
+    padding: 0 8px;
+    border: 1px solid #7c8595;
+    background-color: transparent;
+    border-radius: 0;
+    color: #7c8595;
+    font-size: 14px;
+    margin: 10px 10px 10px 0;
+}
+.info .box .fa {
+    font-size: 42px;
+    float: left;
+    margin: 7px 15px 0 0;
+}
+.info .box .fa + p {
+    margin-bottom: 0;
+}
+.info .box a {
+    font-size: 22px;
+}
+
+.partners {
+    text-align: center;
+    padding: 40px 15px;
+}
+.partners ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+.partners li {
+    display: inline-block;
+    margin-bottom: 8px;
+    width: 15%;
+    height: 150px;
+}
+.partners li + li {
+    margin-left: 30px;
+}
+.partner-logo {
+    display: block;
+    height: 100%;
+    background-size: contain !important;
+    opacity: 0.75;
+    margin-bottom: 10px;
+}
+.partner-logo:hover {
+    opacity: 1;
+}
+
+/* О фонде */
+
+.header-bg {
+    background: url(trigger-bg.jpg)/*tpa=http://frp45.ru/image/trigger-bg.jpg*/ no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 15px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.header-bg h1 {
+    margin-top: 0;
+}
+.docs h3 {
+    margin-bottom: 15px;
+}
+.docs ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.docs ul li + li {
+    margin-top: 5px;
+}
+.docs ul li:before {
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    display: inline-block;
+    color: #356d2e;
+}
+
+/* Займы */
+
+.steps .num {
+    display: block;
+    font-size: 32px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: #356d2e;
+    color: #fff;
+    float: left;
+    margin-right: 12px;
+}
+.steps h3 {
+    margin-bottom: 25px;
+}
+.steps .h4 {
+    margin: 5px 0;
+}
+.steps .col-sm-4 {
+    padding-bottom: 30px;
+}
+
+/* Новости */
+
+.news-list {
+    padding: 40px 15px;
+}
+.news-list .col-sm-3 {
+    margin-bottom: 30px;
+}
+.news-list a:hover {
+    color: #356d2e;
+}
+.news-list .h4 {
+    margin-top: 0;
+}
+.news-list img {
+    box-shadow: 1px 0 2px rgba(0,0,0,0.1);
+}
+.news-list .box {
+    padding: 12px 18px;
+    background: #f8f7f6;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.news-list .date {
+    color: #888;
+    margin: 5px 0;
+    font-size: 13px;
+}
+.pagination {
+    margin: 30px 0 0;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #356d2e;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background: #356d2e;
+    border-color: #356d2e;
+}
+.pagination > li {
+    display: inline-block;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-radius: 0;
+}
+
+/* Страница новости */
+
+.news-page {
+    padding: 0 15px 40px;
+}
+.breadcrumb {
+    background: transparent;
+    margin-top: 0;
+}
+.full-text {
+    margin-bottom: 30px;
+}
+
+/* Программы поддержки */
+
+.program-list {
+    padding: 20px 15px 40px;
+}
+.program-list h3, .program-page h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.program-list ul, .program-page ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.program-list ul li + li, .program-page ul li + li {
+    margin-top: 11px;
+}
+.program-list .col-sm-3 ul li:before, .program-page ul li:before {
+    content: "\f101";
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 10px;
+    float: left;
+    margin-top: 3px;;
+}
+.program-list .box {
+    padding: 15px 20px;
+    background: #f8f7f6;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.list-view div{
+    margin-bottom: 2%;
+}
+.program-list .h4 {
+    display: block;
+    margin: 0 0 10px;
+}
+.program-list .h4:hover, .program-page .h4:hover {
+    color: #356d2e;
+}
+.program-list .box + .box {
+    margin-top: 20px;
+}
+
+/* Страница программы */
+
+.program-page li.active a {
+    color: #000;
+}
+
+/* 404 ошибка и страница поиска */
+
+.error {
+    padding: 200px 15px;
+    margin-bottom: -30px;
+    font-size: 16px;
+}
+.error a {
+    color: #fff;
+    display: inline-block;
+    border-bottom: 1px dashed;
+}
+.search {
+    font-size: 16px;
+}
+.search-list .row + .row {
+    margin-top: 30px;
+}
+.search-list .box {
+    padding: 15px 20px;
+    background: #f8f7f6;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.search-list .h4 {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.no-background{
+    background: none!important;
+}
+
+#img_management{
+    margin: 15px 0px 0px 0px;
+}
